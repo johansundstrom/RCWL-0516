@@ -9,7 +9,7 @@ Notice:
 
 <img src="http://www.electroschematics.com/wp-content/uploads/2017/08/1-RCWL-0516-Intro-400x305.png">
 
-| PIN | Notes                     |
+| PIN | Function                  |
 |-----|---------------------------|
 | 3V3 | 3V3 Control power out     |
 | GND | Ground                    |
@@ -31,6 +31,5 @@ Specs.
 | Output Control Low Level         | 0V                         |
 | Output Control High Level        | 3.3V                       |
 | Operating Temperature            | -20~80 celsius             |
-| Storage Temperature              | -40~100 celsius            |
 
 <img src="http://www.rogerclark.net/wp-content/uploads/2017/06/RCWL-0516-schematic-annotated.png">
