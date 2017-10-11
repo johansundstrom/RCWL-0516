@@ -1,23 +1,23 @@
-int ip = 8;
-int val = 0;
-int led = 13;
+int sensorPin = 8;    //Arduino UNO
+int sensorValue = 0;  //startvärde från RCWL
+int ledPin = 13;      //Lysdiod
 
 void setup() {
   Serial.begin(9600);
-  pinMode (ip, INPUT);
-  pinMode (led, OUTPUT);
+  pinMode (sensorPin, INPUT);
+  pinMode (ledPin, OUTPUT);
 }
 
 void loop() {
-  val = digitalRead(ip);
-  Serial.println(val, DEC);
-  if(val >0)
+  val = digitalRead(sensorPin);
+  Serial.println(sensorValue, DEC);
+  if(sensorValue > 0)
   {
-    digitalWrite(led, HIGH);
+    digitalWrite(ledPin, HIGH);
   }
   else
   {
-    digitalWrite(led, LOW);
+    digitalWrite(ledPin, LOW);
   }
   delay(1000);
 }
