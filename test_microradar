@@ -1,0 +1,34 @@
+/*
+ * Log the output pin of a RCWL-0516 radar module to a 433 MHz XY-FST transmitter.
+ * by ivoras@gmail.com
+ */
+
+#include <VirtualWire.h>
+
+#define PIN_RADAR 2
+#define PIN_TX 9
+#define PIN_LED 13
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(PIN_LED, OUTPUT);
+  vw_set_tx_pin(PIN_TX);        // Arduino pin to connect the receiver data pin    
+  vw_setup(6000);               // bps connection speed
+}
+
+int rv = -1;
+
+void loop() {
+  digitalWrite(PIN_LED, HIGH);
+  int v = digitalRead(PIN_RADAR);
+  if (v != rv) {
+    rv = v;
+    char msg[20];
+    sprintf(msg, "R %lu %d", millis() / 1000, v);
+    vw_send((uint8_t *)msg, strlen(msg));
+    Serial.println(msg);
+    vw_wait_tx();        // Wait to finish sending the message
+  }
+  digitalWrite(PIN_LED, LOW);
+  delay(100);
+}
