@@ -1,6 +1,7 @@
 # RCWL-0516
 ## Allt om RCWL-0516 och demoprojekt
 This mini doppler radar sensor module is equipped with supporting DC 4-28V wide voltage This is a mini radar motion sensor module is equipped with RCWL-9196 chip based on the doppler microwave induction technology. It will automatically comtinuously output the high level TTL signel when there is motion. 360 degree no blind angle detection and maximum 7m sensoring distance with adjustable delay time and sensitivity. It is perfect for DIY microwave motion sensor light switch, human sensor toys, smart security devices, etc.
+
 Notice: 
 1. The right ahead of induction side should't place any metal to block 
 2. The front/back side should reserve more than 1cm space 
