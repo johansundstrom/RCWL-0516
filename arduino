@@ -1,4 +1,5 @@
-```int sensorPin = 8;    //Arduino UNO
+```javascript
+int sensorPin = 8;    //Arduino UNO
 int sensorValue = 0;  //startvärde från RCWL
 int ledPin = 13;      //Lysdiod
 
