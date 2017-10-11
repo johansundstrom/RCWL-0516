@@ -1,4 +1,4 @@
-int sensorPin = 8;    //Arduino UNO
+```int sensorPin = 8;    //Arduino UNO
 int sensorValue = 0;  //startvärde från RCWL
 int ledPin = 13;      //Lysdiod
 
@@ -21,3 +21,4 @@ void loop() {
   }
   delay(1000);
 }
+```
