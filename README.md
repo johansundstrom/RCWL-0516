@@ -10,6 +10,7 @@ Allt om RCWL-0516 och demoprojekt
 | CDS | Enable control chip (<0V7 = OUT LOW) |      |
 
 Specs.
+
 | ATTRIBUTE                        | VALUE                      |
 |----------------------------------|----------------------------|
 | Operating Voltage                | 4-28V                      |
